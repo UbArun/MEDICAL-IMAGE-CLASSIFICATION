@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brain Tumor Classification Using Deep Learning</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand animate-text" href="#">Brain Tumor Classification Using Deep Learning</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4 file-input">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        <div class="container">
+            <p>&copy; {{ current_year }} Brain Tumor Classification. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
